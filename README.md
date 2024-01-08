@@ -10,6 +10,7 @@ The increasing demand for electricity, particularly during peak consumption peri
 The goal is to develop a robust time series regression models to forecast household electric power consumption. This will help us in determining how much energy is likely to be consumed in the future. With this, the energy providers can better plan the integration of renewable energy sources into the grid and reduce reliance on non-renewable and greenhouse gas-emitting sources such as fossil fuels. This will help in reducing the environmental damage, improving reliability, and supporting sustainable development.
 
 ### Models developed
+The data was sampled to hourly from minute level keeping in mind the computation power.
 1. ARIMA
 2. SARIMA
 3. TBATS
@@ -22,3 +23,10 @@ The goal is to develop a robust time series regression models to forecast househ
 | SARIMA | 319.87 |215.56 |
 | TBATS | 302.08 | 211.44 |
 | Prophet | 285.22 | 183.5 |
+
+### Conclusions
+1. ARIMA fails to capture any seasonal information and predicts a straight line with some fluctuation.
+2. SARIMA, has caught daily seasonality pretty well but cannot capture higher seasonality (yearly in this case).
+3. TBATs captures multiple seasonality well, but has extremely high execution time and computation power needed. 
+4. Prophet model is quick and grasps multiple seasonality details the best in comparison to other models. Hence, best model in our exploration.
+5. Adding exogenous variable like temperature, humidity, etc. to Prophet would give much lower RMSE and MAE values leading to better predictions. 
