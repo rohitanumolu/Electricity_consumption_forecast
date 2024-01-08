@@ -10,7 +10,7 @@ The increasing demand for electricity, particularly during peak consumption peri
 The goal is to develop a robust time series regression models to forecast household electric power consumption. This will help us in determining how much energy is likely to be consumed in the future. With this, the energy providers can better plan the integration of renewable energy sources into the grid and reduce reliance on non-renewable and greenhouse gas-emitting sources such as fossil fuels. This will help in reducing the environmental damage, improving reliability, and supporting sustainable development.
 
 ### Models developed
-The data was sampled to hourly from minute level keeping in mind the computation power.
+The data was sampled to hourly from minute level keeping in mind the computation power. This can be found [here](data/hourly.csv)
 1. ARIMA
 2. SARIMA
 3. TBATS
